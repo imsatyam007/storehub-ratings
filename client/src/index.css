@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* ===========================================================
+   StoreHub Ratings Design System
+=========================================================== */
+
+:root {
+
+  /* Backgrounds */
+  --background: #F8F9FC;
+  --surface: #FFFFFF;
+  --surface-alt: #ECEEF5;
+
+  /* Sidebar */
+  --sidebar: #1A1D2E;
+
+  /* Text */
+  --text-primary: #1A1D2E;
+  --text-secondary: #4B506B;
+  --text-muted: #8B90A8;
+  --text-light: #EEF0FF;
+
+  /* Brand */
+  --primary: #3D52D5;
+  --primary-hover: #2A3AAF;
+  --primary-tint: #EEF0FF;
+
+  /* Status */
+  --success: #16A34A;
+  --warning: #D97706;
+  --danger: #DC2626;
+
+  /* Rating */
+  --star: #E8A000;
+
+  /* Role Colors */
+  --admin: #3D52D5;
+  --admin-bg: #EEF0FF;
+
+  --user: #16A34A;
+  --user-bg: #DCFCE7;
+
+  --owner: #D97706;
+  --owner-bg: #FFEDD5;
+
+  /* Borders */
+
+  --border: #E5E7EB;
+
+  /* Radius */
+
+  --radius: 14px;
+
+  /* Shadow */
+
+  --shadow:
+    0 2px 8px rgba(15,23,42,.05);
+
+}
+
+body{
+
+    background:var(--background);
+    color:var(--text-primary);
+    font-family:
+      Inter,
+      system-ui,
+      sans-serif;
+
+}
+
+*{
+
+    transition:.25s;
+
+}
+
+/* View Transition */
+
+::view-transition-group(*),
+::view-transition-old(*),
+::view-transition-new(*){
+
+    animation-duration:.25s;
+    animation-timing-function:cubic-bezier(0.19,1,0.22,1);
+
+}
+
